@@ -154,6 +154,23 @@ iframe {
     text-decoration: none;
 }
 
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),
+        url('../img/foto-fundo.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.hero img{
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
+    filter: alpha(opacity=0.5);
+}
+
 /*6.Listas Personalizadas*/
 ul {
     list-style: none;
