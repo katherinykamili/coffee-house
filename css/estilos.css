@@ -166,7 +166,11 @@ section {
 }
 
 .ao-leite {
-    display: none
+    display: none;
+    width: 100%;
+    height: 375px;
+    overflow: hidden;
+    object-fit: cover;
 }
 
 .w3-left,
@@ -179,15 +183,6 @@ section {
     height: 13px;
     width: 13px;
     padding: 0
-}
-
-.ao-leite {
-    border-radius: 12px;
-    transition: transform .2s ease;
-}
-
-.ao-leite:hover {
-    transform: scale(1.05);
 }
 
 h2 {
