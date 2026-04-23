@@ -97,6 +97,58 @@ section {
     margin-bottom: 32px;
 }
 
+/* Estilização das imagens do menu */
+
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+
+/* Estilos do slider */
+
+.slider-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.slider-btn-left,
+.slider-btn-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    padding: 12px;
+    z-index: 10;
+    transition: all .3s ease;
+}
+
+.slider-btn-left {
+    left: 10px;
+}
+
+.slider-btn-right {
+    right: 10px;
+}
+
+.slider-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.mySlides {
+    border-radius: 12px;
+    transition: transform .2s ease;
+}
+
+.mySlides:hover {
+    transform: scale(1.05);
+}
+
 h2 {
     font-size: 1.6rem;
     font-weight: 700;
