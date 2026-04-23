@@ -20,8 +20,10 @@
     <!-- NAVEGAÇÃO -->
     <nav>
       <a href="index.html">Início</a>
-      <a href="sobre.html">Sobre</a>
+      <a href="sobre.html">Sobre nós</a>
+      <a href="menu.html">Menu</a>
       <a href="contato.html">Saiba mais</a>
+      <a href="index.html#galeria">Galeria</a>
     </nav>
     <br>
 
@@ -36,52 +38,22 @@
           <li>Café coado</li>
         </ul>
       </section>
-
-      <div class="w3-content w3-display-container slider-container" style="max-width:800px">
-        <img class="mySlides" src="./img/expresso.jpeg" style="width:100%">
-        <img class="mySlides" src="./img/americano.jpeg" style="width:100%">
-        <img class="mySlides" src="./img/coado.jpeg" style="width:100%">
-
-        <div class="w3-left w3-hover-text-khaki slider-btn-left" onclick="plusDivs(-1)">&#10094;</div>
-        <div class="w3-right w3-hover-text-khaki slider-btn-right" onclick="plusDivs(1)">&#10095;</div>
-
-        <div class="w3-center w3-container slider-dots" style="width:100%">
-          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-        </div>
+      <div class='galeria' id='galeria'>
+          <figure>
+            <img src="img/expresso.jpeg" alt="Expresso" loading='lazy'>
+            <figcaption>Expresso</figcaption>
+          </figure>
+          <figure>
+            <img src="img/americano.jpeg" alt="Americano" loading='lazy'>
+            <figcaption>Americano</figcaption>
+          </figure>
+          <figure>
+            <img src="img/coado.jpeg" alt="Café coado" loading='lazy'>
+            <figcaption>Café coado</figcaption>
+          </figure>
       </div>
-
-      <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
-
-        function plusDivs(n) {
-          showDivs(slideIndex += n);
-        }
-
-        function currentDiv(n) {
-          showDivs(slideIndex = n);
-        }
-
-        function showDivs(n) {
-          var i;
-          var x = document.getElementsByClassName("mySlides");
-          var dots = document.getElementsByClassName("demo");
-          if (n > x.length) { slideIndex = 1 }
-          if (n < 1) { slideIndex = x.length }
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-          }
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" w3-white", "");
-          }
-          x[slideIndex - 1].style.display = "block";
-          dots[slideIndex - 1].className += " w3-white";
-        }
-      </script>
-
       <br>
+
       <section>
         <h3>🥛 Ao leite</h3>
         <ul>
@@ -90,6 +62,20 @@
           <li>Flat white</li>
         </ul>
       </section>
+      <div class='galeria' id='galeria'>
+          <figure>
+            <img src="img/latte.jpeg" alt="Latte" loading='lazy'>
+            <figcaption>Latte</figcaption>
+          </figure>
+          <figure>
+            <img src="img/cappuccino.jpeg" alt="Cappuccino" loading='lazy'>
+            <figcaption>Cappuccino</figcaption>
+          </figure>
+          <figure>
+            <img src="img/Avocado Toast.jpeg" alt="Toast com avocado" loading='lazy' figcaption="Toast com avocado">
+            <figcaption>Toast com avocado</figcaption>
+          </figure>
+      </div>
       <br>
       <section>
         <h3>🍫 Especiais</h3>
@@ -118,6 +104,21 @@
           <li>Toast com avocado</li>
         </ul>
       </section>
+      
+      <div class='galeria' id='galeria'>
+          <figure>
+            <img src="img/croassant.jpeg" alt="Croissant artesanal" loading='lazy'>
+            <figcaption>Croissant artesanal</figcaption>
+          </figure>
+          <figure>
+            <img src="img/sanduiche goumet.jpeg" alt="Sanduíche gourmet" loading='lazy'>
+            <figcaption>Sanduíche gourmet</figcaption>
+          </figure>
+          <figure>
+            <img src="img/Avocado Toast.jpeg" alt="Toast com avocado" loading='lazy' figcaption="Toast com avocado">
+            <figcaption>Toast com avocado</figcaption>
+          </figure>
+      </div>
       <br>
       <section>
         <h3>🍰 Sobremesas</h3>
@@ -127,6 +128,21 @@
           <li>Torta de limão</li>
         </ul>
       </section>
+      <br>
+      <div class='galeria' id='galeria'>
+          <figure>
+            <img src="img/cheesecake de frutas vermelhas.jpeg" alt="Cheesecake de frutas vermelhas" loading='lazy'>
+            <figcaption>Cheesecake de frutas vermelhas</figcaption>
+          </figure>
+          <figure>
+            <img src="img/torte de bolacha.jpeg" alt="Torta de bolacha" loading='lazy'>
+            <figcaption>Torta de bolacha</figcaption>
+          </figure>
+          <figure>
+            <img src="img/torta de limão.jpeg" alt="Torta de limão" loading='lazy' figcaption="Torta de limão">
+            <figcaption>Torta de limão</figcaption>
+          </figure>
+      </div>
 
     </main>
     <br>
