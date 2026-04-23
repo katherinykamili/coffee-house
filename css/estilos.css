@@ -100,7 +100,11 @@ section {
 /* Estilização das imagens do menu */
 
 .mySlides {
-    display: none
+    display: none;
+    width: 100%;
+    height: 375px;
+    overflow: hidden;
+    object-fit: cover;
 }
 
 .w3-left,
