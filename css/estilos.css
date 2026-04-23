@@ -254,6 +254,7 @@ figcaption {
   margin-top:  8px;
 }
 
+/* Estilização da galeria de imagens */
 .galeria {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
