@@ -97,6 +97,36 @@ section {
     margin-bottom: 32px;
 }
 
+/* Campos */
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #975606;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: "Gelasio", serif;
+  transition: border-color .2s, box-shadow .2s;
+}
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #975606;
+  box-shadow: 0 0 0 3px rgba(230, 140, 22, 0.15);
+}
+
+/* Tabelas */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+thead th {
+    background: #975606;
+    color: white;
+}
+tbody tr:hover {
+    background:#c5a055
+}
+
 /* Estilização das imagens do menu */
 
 .mySlides {
@@ -226,7 +256,7 @@ iframe {
 }
 
 .hero {
-  background: linear-gradient(rgba(59, 57, 57, 0.5)),
+  background: linear-gradient(rgba(59, 57, 57, 0.5), rgb(59, 57, 57, 0.5)),
              url('../img/coffee house.jpg') center/cover;
   height:          375px;
   object-fit: cover;
@@ -272,6 +302,7 @@ figcaption {
 }
 .galeria figure:hover img {
   transform: scale(1.06); opacity: .82;
+}
 
 /*6.Listas Personalizadas*/
 ul {
@@ -290,7 +321,7 @@ ul li {
 
 ul li::before {
     content: "›";
-    color: #629657;
+    color: #886037;
     position: absolute;
     left: 0;
     font-weight: 700;
@@ -298,21 +329,21 @@ ul li::before {
 
 /* 7. Links */
 a {
-    color: #629657;
+    color: #886037;
     text-decoration: none;
     font-weight: 600;
     transition: color .2s ease;
 }
 
 a:hover {
-    color: #629657;
+    color: #886037;
     text-decoration: underline;
     text-decoration: none;
 }
 
 /* 8. Rodapé */
 footer {
-    background: #c5a055;
+    background:#975606;
     color: rgba(255, 255, 255, .7);
     text-align: center;
     padding: 24px 20px;
